@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaTrashAlt, FaPencilAlt } from 'react-icons/fa';
 
 export const ItemListElement = ({
   item,
@@ -28,12 +29,15 @@ export const ItemListElement = ({
       </button>
 
       <div id="btn-Func">
-        <button id="btn-edit" onClick={editEventHandler}>
-            <img src="edit.png" alt="edit" />
+       
+        <button onClick={editEventHandler}>
+          <FaPencilAlt />
         </button>
-        <button id="btn-delete" onClick={deleteEventHandler}>
-            <img src="bin.png" alt="bin" /> 
+
+        <button onClick={deleteEventHandler}>
+          <FaTrashAlt  />
         </button>
+
       </div>
     </li>
   );
