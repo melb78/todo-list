@@ -1,0 +1,83 @@
+* {
+  background-color: #FCFCFD;
+}
+
+.App {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#numTasks {
+  border-radius: 50%;
+  background-color: #190B32;
+  color: #FCFCFD;
+  width: 500px;
+  height: 100px;
+  margin-right: 10px;
+  padding: 5px 14px;
+  text-align: center;
+}
+
+.App-TextBox [type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 12px;
+  background-color: #190B32;
+  color: white;
+  outline-style: none;
+}
+
+.App-Collection ul {
+  list-style-type: none;
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.App-Collection ul li {
+  background-color: aquamarine;
+  border-style: dotted;
+  border-color: #FCFCFD;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 1rem 1rem;
+}
+
+/* .App-Collection ul li:nth-child(even) {
+  border-color: #D51D1D;
+  background-color: #D51D1D;
+}
+
+.App-Collection ul li:nth-child(odd) {
+  border-color: #F8C522;
+  background-color: #F8C522;
+} */
+
+#btn-Text {
+  background-color: transparent;
+  border: 0rem;
+  cursor: pointer;
+  font-size: 20px;
+  width: 8rem;
+  height: 2rem;
+  margin-left: 14%;
+  outline-style: none;
+}
+
+#btn-Func {
+  float: right;
+}
+
+/* #btn-edit {
+
+}
+
+#btn-delete {
+  
+} */
+
+.read-item{
+  text-decoration: line-through;
+}
+
