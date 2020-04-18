@@ -52,7 +52,7 @@ export const MainApp = () => {
           <span id="numTasks">
             {itemList.length}
           </span>
-          TASKS TO-DO Test CI</h1>
+          TASKS TO-DO Test CI Plus</h1>
       </nav>
 
       <section className="App-Collection">
