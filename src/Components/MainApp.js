@@ -33,8 +33,9 @@ export const MainApp = () => {
 
       if (typeof foundItem !== "undefined") {
         foundItem.text = document.getElementById("textBox").value;
-        setUpdateItemId(-1);
       }
+
+      setUpdateItemId(-1);
     }
 
     document.getElementById("textBox").value = "";
