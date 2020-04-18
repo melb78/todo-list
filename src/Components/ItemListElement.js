@@ -24,8 +24,8 @@ export const ItemListElement = ({
   return (
     <li>
       <button id="btn-Text" onClick={checkEventHandler}>
-            {isRead && <span className="read-item">{item.text}</span>}
-            {!isRead && <span>{item.text}</span>}
+            {isRead && <span className="read-item">{`${item.id} - ${item.text}`}</span>}
+            {!isRead && <span>{`${item.id} - ${item.text}`}</span>}
       </button>
 
       <div id="btn-Func">
