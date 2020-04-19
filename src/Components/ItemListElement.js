@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-import { FaTrashAlt, FaPencilAlt } from 'react-icons/fa';
 
-export const ItemListElement = ({
-  item,
-  deleteHandler,
-  editHandler,
-}) => {
-
+export const ItemListElement = ({ item, deleteHandler, editHandler }) => {
   const [isRead, setIsRead] = useState(false);
 
   const checkEventHandler = () => {
@@ -24,20 +18,15 @@ export const ItemListElement = ({
   return (
     <li>
       <button id="btn-Text" onClick={checkEventHandler}>
-            {isRead && <span className="read-item">{`${item.id} - ${item.text}`}</span>}
-            {!isRead && <span>{`${item.id} - ${item.text}`}</span>}
+        {isRead && (
+          <span className="read-item">{`${item.id} - ${item.text}`}</span>
+        )}
+        {!isRead && <span>{`${item.id} - ${item.text}`}</span>}
       </button>
 
       <div id="btn-Func">
-       
-        <button onClick={editEventHandler}>
-          <FaPencilAlt />
-        </button>
-
-        <button onClick={deleteEventHandler}>
-          <FaTrashAlt  />
-        </button>
-
+        <button onClick={editEventHandler}>Edit</button>
+        <button onClick={deleteEventHandler}>Delete</button>
       </div>
     </li>
   );
